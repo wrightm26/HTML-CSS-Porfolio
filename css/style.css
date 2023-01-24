@@ -1,0 +1,206 @@
+body, html{
+    height:100%;
+    margin: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration-color: aliceblue;
+}
+
+body{
+    background-color:rgb(243, 242, 242);
+}
+
+nav li{
+    display: inline;
+    /*inline makes the bulleted list horizontal*/
+    margin: 20px;
+    color:aliceblue
+}
+
+nav ul{
+    background-color: rgb(81, 122, 169);
+    margin: 0;
+    list-style-type: none;
+    /*This removes the bulleted list and makes it normal*/
+    padding: 10px;
+    /*This makes the nav bar wider*/
+}
+
+nav a{
+    color: white;
+    text-decoration:none;
+}
+
+main div{
+    color:aliceblue;
+}
+
+.hero-image{
+    /*the period before hero lets you know its the "class"*/
+    background-image: linear-gradient(rgba(243, 237, 236, 0.5), rgba(0,0,0,.5)),url("../images/art.jpg");
+    /*linear-gradient changes the transparency of the picture*/
+    /*the .../ allows you to leave one folder and go to another.
+    so we left the css folder and went to the images folder*/
+    height:50%;
+    background-repeat:no-repeat;
+    /*making sure the picture doesn't repeat*/
+    background-size:cover;
+    /*allows the whole picture to fit into the website*/
+    background-position: center;
+    position:relative;
+}
+
+.hero-text{
+    color: white;
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    /*centers the text in the middle of the page*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main {
+    padding-top: 5px;
+    padding-left: 5px;
+    height: 100%;
+    float: left;
+    width: 75%;
+}
+
+#side {
+    height: 100%;
+    padding: 5px;
+    float: right;
+    width: 20%;
+}
+
+#profile-image{
+    width:100%;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid rgb(130, 156, 186);
+}
+
+#teacher{
+    width: 100%;
+    width:200px;
+    border-radius: 50%;
+    border: 5px solid rgb(130, 156, 186);
+}
+
+.container{
+    display: grid;
+}
+
+.image {
+    grid-area: 1/1/2/2;
+ }
+
+ #background{
+    grid-area: 1/2/2/3;
+    text-align: left;
+ }
+
+ #profile{
+    text-align:center;
+ }
+
+ .side-articles ul{
+    list-style-type: none;
+    padding-left: 0px;
+    text-align: center;
+    font-size: small;
+ }
+
+ #profile h2{
+ display: inline;
+ }
+
+ #profile-details h2{
+    margin-right: 10px;
+    text-align: center;
+ }
+
+ .side-articles{
+    background-color: rgb(81, 122, 169);
+    text-align:center;
+ }
+
+ .main-articles{
+    background-color:rgb(81, 122, 169);
+    text-align: center;
+    line-height: 25px;
+ }
+
+ #titled, #personal-info{
+    line-height: 30px;
+ }
+ 
+ #contact-sentence{
+    line-height:10px;
+ }
+
+ form{
+    margin-top: 20px;
+ }
+
+ textarea, input{
+    background-color: rgb(130, 156, 186);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    border-color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+textarea, div{
+    color:rgb(248, 242, 242);
+ }
+
+input, div{
+    color: rgb(244, 243, 243);
+ }
+
+ #name{
+    color:aliceblue
+ }
+
+ #body{
+    color:aliceblue
+ }
+
+ .main-articles, .side-articles{
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    margin-right:20px;
+
+ }
+
+ .side-artcles h1{
+    margin-bottom: 20px;
+ }
+
+ footer{
+    width:100%;
+    background: rgb(242, 238, 239);
+    height: 10vh;
+ }
+
+ footer div{
+    text-align:center;
+    color: rgb(139, 152, 195);
+ }
+
+ footer hr{
+    margin-top: 0px;
+    height:12px;
+    float: bottom;
+ }
+
+ main{
+    overflow:auto;
+    margin-right: 10px;
+    margin-left: 10px;
+ }
